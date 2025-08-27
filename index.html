@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DNA LOCK DEMO</title>
+    <script src=""></script>
+    <link rel="stylesheet" href="style.css" />
+</head> 
+<body>
+    <header>
+    <h1>SecureHelix</h1>
+    <p>Simulated Authentication System</p>
+    </header>
+
+    <main>
+        <div class="flex-container">
+            <section class="biometric-section">
+                <h2>Biometric Scan</h2>
+                <div id="scanner">Click Here to Scan</div>
+                <div id="biometric-status">Waiting for Scan ...</div>
+            </section>
+        <section class="dna-section">
+            <h2>DNA Sequence Input</h2>
+             <p>Enter your DNA Sequence A,T,G,C only</p>
+            <textarea id="dna-sequence" placeholder="'Example: ATGCTTACGTAC..."></textarea>
+            <button id="verify-btn">Verify Identity</button>
+            </section>
+        </div>
+        <section class="status-section">
+            <p>System Status:<span id="system-status-text">LOCKED</span></p>
+            <p>Authentication required to access system.</p>
+        </section>
+    </main>
+
+    <footer>
+        @ 2025 SecureHelix A DNA LOCK DEMO PROJECT
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
